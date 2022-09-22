@@ -1,0 +1,108 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+h1{
+    font-size: 60px;
+    color: white;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    letter-spacing: 4px;
+    text-shadow: 2px 2px 4px rgb(0 0 0 / 30%);
+}
+.container{
+    background: url('https://images.unsplash.com/photo-1560762484-813fc97650a0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80');
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    flex-direction: column;
+    transition: filter 0.7s;
+}
+.btn{
+    padding: 10px 50px;
+    background: orangered;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.btn:hover{
+    filter: brightness(0.8);
+}
+.pop-container{
+    position: absolute;
+    height: 180px;
+    width: 380px;
+    background: url('https://images.unsplash.com/uploads/141103282695035fa1380/95cdfeef?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1730&q=80');
+    background-size: cover;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgb(0 0 0 / 30%);
+    font-family: sans-serif;
+    color: blueviolet;
+    top: 0;
+    opacity: 0;
+    transition: 0.8s ease;
+
+}
+input{
+    margin-bottom: 10px;
+    border: none;
+    text-align: center;
+    
+}
+input::placeholder{
+
+   opacity: 0.5;
+   font-size: 1.2em;
+}
+label, .join{
+    display: block;
+  
+}
+input, .join{
+    width: 100%;
+    box-sizing: border-box;
+    padding-block: 10px;
+    border:1.5px solid black;
+}
+input:focus{
+   outline: none;
+}
+.join{
+    font-size: 20px;
+    background: orangered;
+}
+.join:hover{
+    filter: brightness(0.8);
+}
+i{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: black;
+    cursor: pointer;
+}
+h2, label{
+    margin-block: 10px;
+}
+i:hover{
+    color: orangered;
+}
+.active{
+    transform: translateY(120%);
+    opacity: 1;
+    
+}
+.blury{
+ filter: blur(7px) brightness(0.7);
+}
